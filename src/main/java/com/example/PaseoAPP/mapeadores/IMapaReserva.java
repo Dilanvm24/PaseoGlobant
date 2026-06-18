@@ -9,10 +9,10 @@ import com.example.PaseoAPP.dtos.UsuarioDTO;
 import com.example.PaseoAPP.modelos.Reserva;
 import com.example.PaseoAPP.modelos.Usuario;
 
-public interface IMapaUsuario {
-   IMapaUsuario INSTANCIA = Mappers.getMapper(IMapaUsuario.class);
+public interface IMapaReserva {
+    IMapaReserva INSTANCIA = Mappers.getMapper(IMapaReserva.class);
 
-    UsuarioDTO convertir_modelo_a_dto(Usuario usuario);
+    ReservaDTO convertir_modelo_a_dto(Reserva reserva);
   
-   List<UsuarioDTO> convertir_lista_de_modelo_a_lista_de_dto(List<Usuario>Lista);
+   List<ReservaDTO> convertir_lista_de_modelo_a_lista_de_dto(List<Reserva>Lista);
 }

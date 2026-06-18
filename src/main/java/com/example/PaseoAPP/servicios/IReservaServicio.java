@@ -1,0 +1,18 @@
+package com.example.PaseoAPP.servicios;
+
+import java.util.List;
+import java.util.UUID;
+
+import com.example.PaseoAPP.dtos.ReservaDTO;
+import com.example.PaseoAPP.modelos.Reserva;
+
+public interface IReservaServicio {
+
+  ReservaDTO guardarReservaEnBD(Reserva datos);
+
+  ReservaDTO modificarReservaEnBD(Reserva datos, UUID id);
+
+  List<ReservaDTO> buscarReservasEnBD();
+
+  void eliminarReservaEnBD(UUID id);
+}
