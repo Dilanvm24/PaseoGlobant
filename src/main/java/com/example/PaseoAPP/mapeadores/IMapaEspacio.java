@@ -2,12 +2,14 @@ package com.example.PaseoAPP.mapeadores;
 
 import java.util.List;
 
+import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 import com.example.PaseoAPP.dtos.EspacioDTO;
 import com.example.PaseoAPP.modelos.Espacio;
 import com.example.PaseoAPP.modelos.Usuario;
 
+@Mapper(componentModel = "spring")
 public interface IMapaEspacio {
   IMapaEspacio INSTANCIA = Mappers.getMapper(IMapaEspacio.class);
 
